@@ -28,5 +28,8 @@
             while($fgets = fgets($fopen,$readByte)){
                 echo $fgets."<br>";
             }
+        } else {
+            echo "더이상 읽을 파일이 없습니다.";
         }
     }
+
