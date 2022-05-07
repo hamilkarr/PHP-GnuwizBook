@@ -1,5 +1,5 @@
 <?php
-    header('content-type:text/html; charset=euc-kr');
+    // header('content-type:text/html; charset=euc-kr');
 
     $host = 'localhost:3306';
     $user = 'root';
@@ -9,22 +9,25 @@
     $dbConnect->set_charset('utf8');
 
     if(mysqli_connect_errno()) {
-        echo "╣╔юлем╨ёюл╫╨ {$dbName}©║ а╒╪с ╫гфп";
+        echo "К█╟Л²╢М└╟К╡═Л²╢Л┼╓ {$dbName}Л≈░ Л═▒Л├█ Л▀╓М▄╗";
+    } else {
+        echo "Л═▒Л├█ Л└╠ЙЁ╣ <br>";
     }
+
 
     /*
     if(mysqli_connect_errno()) {
-        echo '╣╔юлем╨ёюл╫╨ а╒╪с ╫гфп';
+        echo 'О©╫О©╫О©╫О©╫О©╫м╨О©╫О©╫л╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫';
         echo mysqli_connect_error();
     } else {
-        echo "а╒╪с ╪╨╟Ь";
+        echo "О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫";
         $sql = 'CREATE DATABASE php200Example';
         $res = $dbConnect->query($sql);
 
         if ($res) {
-            echo "╣╔юлем╨ёюл╫╨ ╩Щ╪╨ ©о╥А";
+            echo "О©╫О©╫О©╫О©╫О©╫м╨О©╫О©╫л╫О©╫ О©╫О©╫О©╫О©╫ О©╫о╥О©╫";
         } else {
-            echo "╣╔юлем╨ёюл╫╨ ╩Щ╪╨ ╫гфп";
+            echo "О©╫О©╫О©╫О©╫О©╫м╨О©╫О©╫л╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫";
         }
     }
     */
