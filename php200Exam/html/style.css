@@ -11,13 +11,23 @@ section{
     padding: 10px;
 }
 .second a{
-    display: block;
-    background-color: #20b64b;
     flex-basis: 95px;
-    line-height: 95px;
-    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    background-color: #20b64b;
+    color: #fff;
     text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transform: scale(1);
+}
+.second a:hover{
+    transform: scale(0.95);
+}
+.second a span{
+    text-align: center;
 }
 .box{
     
