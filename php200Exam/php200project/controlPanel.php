@@ -31,7 +31,7 @@
 <?php foreach($cssSelectorList as $csl) : ?>
     <span>
         <h2><?=$csl['selectorName']?></h2>
-        <form name="wrap" method="post" action="./169-controlPanelSave.php">
+        <form name="wrap" method="post" action="./controlPanelSave.php">
             <h3>흐름</h3>
             <select name="float">
                 <?php
